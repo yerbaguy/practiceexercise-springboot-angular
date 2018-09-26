@@ -43,12 +43,15 @@ public String findWord(int randplword) {
 }
 
 public String getWord(int countrandom) {
+//public int getWord(int randplword) {	
 	
 //  int n1 = 1;
 	
 	String getword = "";
+//	int getword = 1;
 	
 	System.out.println(getword = wordsRepository.getWord(countrandom));
+//	System.out.println(getword = wordsRepository.getWord(getword));
 	
 	return getword;
 	
@@ -59,9 +62,95 @@ public String getWord(int countrandom) {
 	
 }
 
-public int getWordNumber(String engword) {
+//public int getWordNumber(String engword) {
+//public Float getWordNumber(String engword) {
+public Integer getWordNumber(String engword) {	
 	
-	return wordsRepository.getWordNumber(engword);
+//	Integer count = 1;
+	
+	 Integer wordnumber;
+	
+	wordnumber = wordsRepository.getWordNumber(engword);
+	
+	if (wordnumber == null)
+		return 0;
+	else
+		return wordnumber;
+	
+//	return wordsRepository.getWordNumber(engword);
+	
+//	count = wordsRepository.getWordNumber(engword);
+//	
+//	if (count == null) {
+//		
+//		count = 0;
+//	}
+	
+//	return count;
+	
+//    return wordsRepository.getWordNumber(engword);	
+}
+
+//public String getEngWordNumber(String engword) {
+//public boolean getEngWordNumber(String engword) {
+//public Float getEngWordNumber(String engword) {	
+
+
+public String getRandEngWord(int randengwordnumber) {
+	
+	String randengword = "";
+	return randengword = wordsRepository.getRandEngWord(randengwordnumber);
+	
+}
+
+public Integer getEngWordNumber(String engword) {		
+   // Float wordnumber;
+    
+  //  boolean wordnumber;
+	
+    String wordnumb;
+    Integer wordnumber;
+    
+	 wordnumber = wordsRepository.getEngWordNumber(engword);
+
+	 if (wordnumber == null)
+		 return 0;
+	 else
+		 return 1;
+	 
+	 
+//	wordnumb = Float.toString(wordnumber);
+	
+//	System.out.println("getEngWordNumber - wordnumb" + wordnumb);
+	
+	
+//	return wordnumber;
+	
+	 
+//	return wordsRepository.getWordNumber(engword);
+	
+	// return wordsRepository.getEngWordNumber(engword);
+	
+	 
+	 
+  //  return wordnumber > 0 ? true : false; 
+	 
+//	return wordnumber ? true : false;
+	
+	
+	
+}
+
+
+
+public int getWordIdNumber(String plword) {
+	
+	return wordsRepository.getWordsIdNumber(plword);
+}
+
+public boolean wordExists(String engword) {
+	
+	return wordsRepository.wordExists(engword);
 }
 
 }

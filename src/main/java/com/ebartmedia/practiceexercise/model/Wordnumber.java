@@ -5,7 +5,7 @@ import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
 
 @Entity
-public class Word {
+public class Wordnumber {
 
 	
 	private @Id
@@ -13,12 +13,11 @@ public class Word {
 //	Long id;
 	int id;
 //	private String engword;
-	private String plword;
-//	private int idplword;
+//	private int wordnumber;
+//	private float wordnumber; /here
+	private int wordnumber;
 	
-	
-	
-	public Word() {
+	public Wordnumber() {
 		
 		
 	}
@@ -30,10 +29,11 @@ public class Word {
 //	}
 	
 
-	public Word(String plword) {
-//    public Word(int idplword) {		
+	public Wordnumber(int wordnumber) { //float wordnumber
+	
+		
 //		this.id = id;
-		this.plword = plword;
+		this.wordnumber = wordnumber;
 	}
 
 	
@@ -50,17 +50,15 @@ public class Word {
 //		return this.engword;
 //	}
 //	
-	public void setPlword(String plword) {
-//	public void setIdplword(int idplword) {	
+	public void setWordnumber(int wordnumber) {
 	
-		this.plword = plword;
+	     this.wordnumber = wordnumber;
 	
 	}
 	
-	public String getPlword() {
-//	public int getIdplword() {	
+	public float getWordnumber() {
 		
-		return this.plword;
+		return this.wordnumber;
 	}
 
 	

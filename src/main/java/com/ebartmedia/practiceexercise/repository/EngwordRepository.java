@@ -20,6 +20,9 @@ public interface EngwordRepository extends JpaRepository<EngWord, Integer> {
 	@Query("UPDATE EngWord r SET r.typedengword= :engword WHERE r.id=1")
 	void updengword(@Param("engword") String engword);
 	
+//	@Query("SELECT e.typedengword FROM EngWord e WHERE e.id = 1")
+//	public String findTypedEngword();
+	
 	@Query("SELECT e.typedengword FROM EngWord e WHERE e.id = 1")
 	public String findTypedEngword();
 

@@ -40,7 +40,7 @@
 	
 	 <button id="btn-id" type="button" class="btn btn-primary" ng-click="getwordsfunction()">Words</button>
 	 <ul>
-	     <li ng-repeat="word in response">{{ word.engword + "" + word.plword}}</li>
+	     <li ng-repeat="word in response">{{ word.plword}}</li>
 	 </ul>
 	</div>
 	
@@ -68,7 +68,10 @@
 
 		<div class="col-sm-offset-2 col-sm-10">
 			<p>{{postResultMessage}}</p>
-			<p></p>
+			<p>{{ result }}</p>
+			<p>{{ onedigit }}</p>
+			
+			
 		</div>
 	</div>
 	

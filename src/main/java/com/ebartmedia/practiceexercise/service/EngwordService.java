@@ -26,7 +26,13 @@ public class EngwordService {
 		engwordRepository.updengword(engword);
 	}
 	
-	public String findTypedEngword() {
+//	public String findTypedEngword() {
+//		
+//		return engwordRepository.findTypedEngword();
+//	}
+	
+	
+    public String findTypedEngword() {
 		
 		return engwordRepository.findTypedEngword();
 	}

@@ -82,8 +82,23 @@ app.controller('postcontroller', function($scope, $http, $location) {
 //	
 	
 	
+	$scope.onedigit = 5;
+	$scope.anotherdigit = 5;
+	
+	$scope.comparefunction = function() {
+		
+		$scope.result = angular.equals($scope.onedigit, $scope.anotherdigit);
+	};
 	
 	
+	
+//	$scope.comp = function() {
+//		
+//		if (onedigit == anotherdigit)
+//		    return "OK"
+//		    else
+//		    	return "NO
+//	};
 	
 	
 	

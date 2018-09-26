@@ -14,14 +14,21 @@ public class RandPl {
 	@Id
 	@GeneratedValue(strategy=GenerationType.AUTO)
 	@Column(name="id")
+//	@GeneratedValue
 	private int id;
 	
 	@Column(name="randPlWord")
 	private int randPlWord;
 
-	public RandPl(int id, int randPlWord) {
+//	public RandPl(int id, int randPlWord) {
+//		
+//		this.id = id;
+//		this.randPlWord = randPlWord;
+//	}
+	
+public RandPl(int randPlWord) {
 		
-		this.id = id;
+	//	this.id = id;
 		this.randPlWord = randPlWord;
 	}
 
@@ -49,7 +56,7 @@ public class RandPl {
 	
 	public int getRandPlWord() {
 
-		return this.getRandPlWord();
+		return this.randPlWord;
 	}
 
 }
